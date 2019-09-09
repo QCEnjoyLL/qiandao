@@ -177,4 +177,4 @@
 
 [1]:https://github.com/binux/qiandao
 [2]:https://github.com/binux/qiandao/blob/master/README.md
-[3]:https://github.com/orangeqiu/qiandao/blob/master/Dockerfile
+[3]:https://github.com/QCEnjoyLL/qiandao/blob/master/Dockerfile
