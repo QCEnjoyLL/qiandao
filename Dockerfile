@@ -1,5 +1,5 @@
 # 基础镜像
-FROM arm64v8/python:2.7-alpine
+FROM python:2.7-alpine
 # 维护者信息
 LABEL maintainer "Orange <orange@nerocats.com>"
 ADD . /usr/src/app
