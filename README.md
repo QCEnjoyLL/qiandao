@@ -175,6 +175,15 @@
 
 其他站点配置请参考 [配置说明][2]
 
+## 补充
+
+为了方便修改网站信息，可将容器内的配置信息全部映射出来
+```
+-v /usr/src/app(自行替换):/usr/src/app
+```
+但是得提前将[文件][4]下载到相应的主机映射目录下解压
+
 [1]:https://github.com/binux/qiandao
 [2]:https://github.com/binux/qiandao/blob/master/README.md
 [3]:https://github.com/QCEnjoyLL/qiandao/blob/master/Dockerfile
+[4]:https://github.com/QCEnjoyLL/qiandao/archive/master.zip
