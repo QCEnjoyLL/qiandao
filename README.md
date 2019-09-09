@@ -62,11 +62,11 @@
 
 1. 国内主机拉取/更新镜像  
     ```
-	docker pull daocloud.io/fangzhengjin/qiandao
+	docker pull daocloud.io/orangeqiu/qiandao
 	```
 2. 国外主机拉取/更新镜像  
 	```
-    docker pull fangzhengjin/qiandao
+    docker pull orangeqiu/qiandao
     ```
 3. 更新镜像需要删除并重新创建容器（**需要手动备份数据库文件**）,不删除重新创建容器则依然使用创建时的版本,或手动更新代码!  
 
@@ -76,7 +76,7 @@
 	如果在创建容器后,自动启动容器出现问题,可能是端口冲突,你可以选择关闭占用80端口的程序  
 	或更改容器开放端口（容器内程序的监听端口制作时已更改为80）  
 	```
-	docker run -d -p 你指定的端口:80 --name qiandao daocloud.io/fangzhengjin/qiandao
+	docker run -d -p 你指定的端口:80 --name qiandao daocloud.io/orangeqiu/qiandao
 	```  
 	注:如果你已经创建了容器,请删除后重新创建  
 2. 国内主机  
@@ -109,26 +109,26 @@
             ```
 		4. 样例(始终重启--开机时,如果Docker服务项已经启动则自动启动该容器)
 		    ```
-		    docker run -d -p 80:80 --name qiandao --restart=always daocloud.io/fangzhengjin/qiandao
+		    docker run -d -p 80:80 --name qiandao --restart=always daocloud.io/orangeqiu/qiandao
 	        ```  
 	3. 不需要挂载Volume  
 	    ```
-		docker run -d -p 80:80 --name qiandao daocloud.io/fangzhengjin/qiandao
+		docker run -d -p 80:80 --name qiandao daocloud.io/orangeqiu/qiandao
 	    ```  
 	4. 需要挂载Volume(在root目录下创建volume,并连接至容器中/usr/src/app/volume位置,也就是代码目录的volume文件夹)  
 	    ```
 		mkdir -p /root/volume
-		docker run -d -p 80:80 --name qiandao -v /root/volume:/usr/src/app/volume daocloud.io/fangzhengjin/qiandao
+		docker run -d -p 80:80 --name qiandao -v /root/volume:/usr/src/app/volume daocloud.io/orangeqiu/qiandao
 		```  
 3. 国外主机  
 	1. 不需要挂载Volume  
 	    ```
-		docker run -d -p 80:80 --name qiandao fangzhengjin/qiandao
+		docker run -d -p 80:80 --name qiandao orangeqiu/qiandao
 	    ```  
 	2. 需要挂载Volume(在root目录下创建volume,并连接至容器中/usr/src/app/volume位置,也就是代码目录的volume文件夹)  
 	    ```
 		mkdir -p /root/volume
-		docker run -d -p 80:80 --name qiandao -v /root/volume:/usr/src/app/volume fangzhengjin/qiandao
+		docker run -d -p 80:80 --name qiandao -v /root/volume:/usr/src/app/volume orangeqiu/qiandao
 		```
 
 ### 四、启动容器  
@@ -177,4 +177,4 @@
 
 [1]:https://github.com/binux/qiandao
 [2]:https://github.com/binux/qiandao/blob/master/README.md
-[3]:https://github.com/fangzhengjin/qiandao/blob/master/Dockerfile
+[3]:https://github.com/orangeqiu/qiandao/blob/master/Dockerfile
